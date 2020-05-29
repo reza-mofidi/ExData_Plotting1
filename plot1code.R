@@ -14,7 +14,7 @@ UCIsubset<- UCIdataset[UCIdataset$Date %in% c("1/2/2007","2/2/2007") ,]
 
 ##Create png file and draw the historam of Global Active Power
 png("plot1.png", width=480, height=480)
-gap<- as.numeric(UCIsubset$Global_active_power)
-hist(gap, col ="red", main = "Global Active Power(kilowatts)" )
+Global_Active_Power<- as.numeric(UCIsubset$Global_active_power)
+hist(Global_Active_Power, col ="red", main = "Global Active Power(kilowatts)" )
 dev.off()
 
